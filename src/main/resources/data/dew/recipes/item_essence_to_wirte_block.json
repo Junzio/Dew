@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+
+  "key": {
+    "#": {
+      "item": "dew:item_essence"
+    }
+  },
+
+  "result": {
+    "item": "dew:wirte_block"
+  }
+}

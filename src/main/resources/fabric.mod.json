@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "dew",
+	"version": "${version}",
+	"name": "Dew",
+	"description": "这是一个关于剑与魔法的世界",
+	"authors": [
+		"Junzio"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Junzio/Dew"
+	},
+	"license": "MIT",
+	"icon": "assets/dew/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.junzio.dew.Dew"
+		],
+		"client": [
+			"com.junzio.dew.DewClient"
+		],
+		"fabric-datagen": [
+			"com.junzio.dew.DewDataGenerator"
+		]
+	},
+	"mixins": [
+		"dew.mixins.json",
+		{
+			"config": "dew.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
